@@ -1,0 +1,10 @@
+{
+  "name": "JC Makeup",
+  "short_name": "JC Makeup",
+  "description": "Aplicación móvil de JC Makeup para conocer servicios y agendar citas.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#76528f",
+  "orientation": "portrait"
+}

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>JC Makeup</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .hero-content {
+            width: min(92%, 760px);
+            margin: 0 auto;
+        }
+
+        .hero-logo {
+            display: block;
+            width: min(72vw, 320px);
+            max-width: 320px;
+            height: auto;
+            margin: 0 auto 18px;
+        }
+
+        .hero .slogan {
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="header">
+
+        <div class="logo">
+            JC <span>Makeup</span>
+        </div>
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- MENÚ -->
+    <nav class="menu" id="menu">
+
+        <a href="#inicio">Inicio</a>
+
+        <a href="#servicios">Servicios</a>
+
+        <a href="#galeria">Galería</a>
+
+        <a href="#agendar">Agendar</a>
+
+        <a href="#contacto">Contacto</a>
+
+    </nav>
+
+
+    <!-- INICIO -->
+    <main>
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-content">
+
+                <p class="welcome">
+                    BIENVENIDA A
+                </p>
+
+                <img
+                    src="logo-jc-makeup.png"
+                    alt="Logo de JC Makeup"
+                    class="hero-logo"
+                >
+
+                <h1>JC Makeup</h1>
+
+                <p class="slogan">
+                    Si quieres lucir bella y radiante,
+                    ve a JC Makeup y te verás impresionante.
+                </p>
+
+                <a href="#agendar"
+                   class="btn">
+                    Agendar cita
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- SERVICIOS -->
+        <section class="section"
+                 id="servicios">
+
+            <h2>
+                Mis servicios
+            </h2>
+
+            <p class="section-text">
+                Realza tu belleza con un maquillaje
+                pensado especialmente para ti.
+            </p>
+
+
+            <div class="services">
+
+                <div class="service-card">
+
+                    <div class="icon">
+                        💄
+                    </div>
+
+                    <h3>
+                        Maquillaje profesional
+                    </h3>
+
+                    <p>
+                        Maquillaje personalizado
+                        para diferentes ocasiones.
+                    </p>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div class="icon">
+                        🏠
+                    </div>
+
+                    <h3>
+                        Maquillaje a domicilio
+                    </h3>
+
+                    <p>
+                        Disfruta del servicio
+                        desde la comodidad de tu hogar.
+                    </p>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div class="icon">
+                        👰
+                    </div>
+
+                    <h3>
+                        Maquillaje para novias
+                    </h3>
+
+                    <p>
+                        Un maquillaje especial
+                        para un día inolvidable.
+                    </p>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div class="icon">
+                        ✨
+                    </div>
+
+                    <h3>
+                        Maquillaje social
+                    </h3>
+
+                    <p>
+                        Ideal para fiestas,
+                        eventos y ocasiones especiales.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- GALERÍA -->
+        <section class="section gallery-section"
+                 id="galeria">
+
+            <h2>
+                Mi trabajo
+            </h2>
+
+            <p class="section-text">
+                Descubre algunos de mis trabajos
+                de maquillaje.
+            </p>
+
+            <div class="gallery">
+
+                <div class="gallery-item">
+                    💜
+                </div>
+
+                <div class="gallery-item">
+                    💄
+                </div>
+
+                <div class="gallery-item">
+                    ✨
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- AGENDAR -->
+        <section class="section booking"
+                 id="agendar">
+
+            <h2>
+                Agenda tu cita
+            </h2>
+
+            <p class="section-text">
+                Completa tus datos y
+                nos pondremos en contacto contigo.
+            </p>
+
+
+            <form id="bookingForm">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Tu nombre"
+                    required
+                >
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Número de teléfono"
+                    required
+                >
+
+                <select id="service" required>
+
+                    <option value="">
+                        Selecciona un servicio
+                    </option>
+
+                    <option value="Maquillaje profesional">
+                        Maquillaje profesional
+                    </option>
+
+                    <option value="Maquillaje a domicilio">
+                        Maquillaje a domicilio
+                    </option>
+
+                    <option value="Maquillaje para novias">
+                        Maquillaje para novias
+                    </option>
+
+                    <option value="Maquillaje social">
+                        Maquillaje social
+                    </option>
+
+                </select>
+
+
+                <input
+                    type="date"
+                    id="date"
+                    required
+                >
+
+
+                <button
+                    type="submit"
+                    class="btn">
+                    Solicitar cita
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- CONTACTO -->
+        <section class="section contact"
+                 id="contacto">
+
+            <h2>
+                Contáctame
+            </h2>
+
+            <p>
+                Estoy lista para ayudarte
+                a lucir espectacular.
+            </p>
+
+
+            <div class="social">
+
+                <a href="#">
+                    Instagram
+                </a>
+
+                <a href="#">
+                    TikTok
+                </a>
+
+                <a href="#">
+                    Facebook
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+
+        <p>
+            © 2026 JC Makeup
+        </p>
+
+        <p>
+            Maquillaje profesional
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
